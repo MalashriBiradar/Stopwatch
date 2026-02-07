@@ -15,7 +15,7 @@ const tickMs = 31;  //update every ~31(about 30fps).Use 10 for 100Hz
 function formatTime(ms){
   const totalHundredths = Math.floor( ms / 10); //hunderds of second
   const hundredths = totalHundredths % 100;
-  const totalSeconds  =Math.floor(ms / 1000);
+  const totalSeconds  = Math.floor(ms / 1000);
   const seconds = totalSeconds % 60;
   const minutes =Math.floor(totalSeconds / 60) % 60;
   const hours = Math.floor(totalSeconds / 3600);
@@ -65,6 +65,7 @@ function reset(){
   if(intervalId) clearInterval(intervalId);
   intervalId = null;
   startTimestamp = 0;
+  elapsed=0;
   display.textContent = '00:00:00';
   //clear laps
   lapsList.innerHTML = '';
@@ -101,7 +102,7 @@ lapBtn.addEventListener('click',lap);
 
 //Keyboard shortcuts: Space to start/stop,Lto lap, R to reset
 document.addEventListener('keydown', (e) => {
-  if(e.key === ''){ //space start/stop
+  if(e.key === ' '){ //space start/stop
     e.preventDefault();
     if(intervalId) stop(); else start();
   }else if(e.key.toLowerCase() === 'l'){
