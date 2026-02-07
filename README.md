@@ -1,5 +1,6 @@
 A simple and interactive Stopwatch built using HTML, CSS, and JavaScript.
 This project demonstrates time calculation, DOM manipulation, and event handling in JavaScript.
+<br>
 Feature:
 
 1. Start the Stopwatch
