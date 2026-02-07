@@ -12,5 +12,7 @@ Feature:
 Technologies Used
 
 HTML5 - Structure of the app
+<br>
 CSS3 - styling and layout
+<br>
 JavaScript(ES6) - Stopwatch logic and time calculation
