@@ -8,7 +8,9 @@ Feature:
 4. Lap recording with multiple laps
 5. Display tme in HH:MM:SS format
 6. Accessible UI using aria-label and regions
-   Technologies Used
-   HTML5 - Structure of the app
-   CSS3 - styling and layout
-   JavaScript(ES6) - Stopwatch logic and time calculation
+
+Technologies Used
+
+HTML5 - Structure of the app
+CSS3 - styling and layout
+JavaScript(ES6) - Stopwatch logic and time calculation
